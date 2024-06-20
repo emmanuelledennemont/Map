@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75AA78132C237B8000C8F7A3 /* ReparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA78122C237B8000C8F7A3 /* ReparationView.swift */; };
+		75AA78152C237C0100C8F7A3 /* CalendrierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA78142C237C0100C8F7A3 /* CalendrierView.swift */; };
+		75AA78172C237C1C00C8F7A3 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA78162C237C1C00C8F7A3 /* ProfilView.swift */; };
+		75AA78192C237FA000C8F7A3 /* CarteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA78182C237FA000C8F7A3 /* CarteView.swift */; };
+		75AA781C2C2388A400C8F7A3 /* ReparationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA781B2C2388A400C8F7A3 /* ReparationViewModel.swift */; };
+		75AA781E2C23891800C8F7A3 /* ReparationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA781D2C23891800C8F7A3 /* ReparationModel.swift */; };
 		D9319CC62C21B650008F60B2 /* MapKit2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9319CC52C21B650008F60B2 /* MapKit2App.swift */; };
 		D9319CC82C21B650008F60B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9319CC72C21B650008F60B2 /* ContentView.swift */; };
 		D9319CCA2C21B651008F60B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9319CC92C21B651008F60B2 /* Assets.xcassets */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75AA78122C237B8000C8F7A3 /* ReparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReparationView.swift; sourceTree = "<group>"; };
+		75AA78142C237C0100C8F7A3 /* CalendrierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendrierView.swift; sourceTree = "<group>"; };
+		75AA78162C237C1C00C8F7A3 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		75AA78182C237FA000C8F7A3 /* CarteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteView.swift; sourceTree = "<group>"; };
+		75AA781B2C2388A400C8F7A3 /* ReparationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReparationViewModel.swift; sourceTree = "<group>"; };
+		75AA781D2C23891800C8F7A3 /* ReparationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReparationModel.swift; sourceTree = "<group>"; };
 		D9319CC22C21B650008F60B2 /* MapKit2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKit2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9319CC52C21B650008F60B2 /* MapKit2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKit2App.swift; sourceTree = "<group>"; };
 		D9319CC72C21B650008F60B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +48,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75AA78112C237B5E00C8F7A3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				75CF23D62C23918100B1C5A6 /* Carte */,
+				75CF23D42C23915500B1C5A6 /* Profil */,
+				75AA781A2C23888200C8F7A3 /* Reparation */,
+				75CF23D52C23917300B1C5A6 /* Calendrier */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		75AA781A2C23888200C8F7A3 /* Reparation */ = {
+			isa = PBXGroup;
+			children = (
+				75AA78122C237B8000C8F7A3 /* ReparationView.swift */,
+				75AA781B2C2388A400C8F7A3 /* ReparationViewModel.swift */,
+			);
+			path = Reparation;
+			sourceTree = "<group>";
+		};
+		75CF23D42C23915500B1C5A6 /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				75AA78162C237C1C00C8F7A3 /* ProfilView.swift */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		75CF23D52C23917300B1C5A6 /* Calendrier */ = {
+			isa = PBXGroup;
+			children = (
+				75AA78142C237C0100C8F7A3 /* CalendrierView.swift */,
+			);
+			path = Calendrier;
+			sourceTree = "<group>";
+		};
+		75CF23D62C23918100B1C5A6 /* Carte */ = {
+			isa = PBXGroup;
+			children = (
+				75AA78182C237FA000C8F7A3 /* CarteView.swift */,
+			);
+			path = Carte;
+			sourceTree = "<group>";
+		};
 		D9319CB92C21B650008F60B2 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +111,7 @@
 		D9319CC42C21B650008F60B2 /* MapKit2 */ = {
 			isa = PBXGroup;
 			children = (
+				75AA78112C237B5E00C8F7A3 /* Features */,
 				D9319CD32C21B65E008F60B2 /* Helpers */,
 				D9319CD42C21B668008F60B2 /* Model */,
 				D9319CC52C21B650008F60B2 /* MapKit2App.swift */,
@@ -85,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				D9319CD52C21B680008F60B2 /* Tab.swift */,
+				75AA781D2C23891800C8F7A3 /* ReparationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +220,12 @@
 				D9319CD62C21B680008F60B2 /* Tab.swift in Sources */,
 				D9319CC82C21B650008F60B2 /* ContentView.swift in Sources */,
 				D9319CD82C21CCD6008F60B2 /* ButtonShettHelpers.swift in Sources */,
+				75AA78152C237C0100C8F7A3 /* CalendrierView.swift in Sources */,
+				75AA781E2C23891800C8F7A3 /* ReparationModel.swift in Sources */,
+				75AA78192C237FA000C8F7A3 /* CarteView.swift in Sources */,
+				75AA781C2C2388A400C8F7A3 /* ReparationViewModel.swift in Sources */,
+				75AA78132C237B8000C8F7A3 /* ReparationView.swift in Sources */,
+				75AA78172C237C1C00C8F7A3 /* ProfilView.swift in Sources */,
 				D9319CC62C21B650008F60B2 /* MapKit2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MapKit2/Preview Content\"";
+				DEVELOPMENT_TEAM = WKVMYRZ3YZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -324,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MapKit2/Preview Content\"";
+				DEVELOPMENT_TEAM = WKVMYRZ3YZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
