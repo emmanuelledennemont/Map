@@ -1,13 +1,11 @@
 //
-//  ContenView.swift
+//  ContentView.swift
 //  MapKit2
 //
 //  Created by Emmanuelle  Dennemont on 18/06/2024.
 //
 
-
 import SwiftUI
-import MapKit
 
 struct ContentView: View {
     @State private var showSheet: Bool = false
@@ -19,11 +17,12 @@ struct ContentView: View {
         
         ZStack(alignment: .bottom) {
             
-            if #available(iOS 17, *) {
-                Map(initialPosition: .region(.paris)) // Utilisation de la région de Paris
-            } else {
-                Map(coordinateRegion: .constant(.paris)) // Utilisation de la région de Paris
-            }
+            // Remove Map view
+            // if #available(iOS 17, *) {
+            //     Map(initialPosition: .region(.paris)) // Utilisation de la région de Paris
+            // } else {
+            //     Map(coordinateRegion: .constant(.paris)) // Utilisation de la région de Paris
+            // }
             
             TabBar()
                 .frame(height: 49)
@@ -87,8 +86,8 @@ struct ContentView: View {
                     .frame(width: 200) // Ajustez la largeur selon vos besoins
             
                     .padding(.leading, 8) // Ajoutez un padding à gauche pour l'espacement
-                    Spacer()                }
-               
+                    Spacer()
+                }
             }
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
@@ -128,9 +127,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-extension MKCoordinateRegion {
-    static var paris: MKCoordinateRegion {
-        let center = CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522) // Coordonnées de Paris (latitude et longitude)
-        return .init(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000) // Rayon défini à 10 km autour du centre
-    }
-}
+// Remove the extension for MKCoordinateRegion if it's no longer needed
+// extension MKCoordinateRegion {
+//     static var paris: MKCoordinateRegion {
+//         let center = CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522) // Coordonnées de Paris (latitude et longitude)
+//         return .init(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000) // Rayon défini à 10 km autour du centre
+//     }
+// }

@@ -29,8 +29,4 @@ enum Tab: String, CaseIterable {
     }
 }
 
-// Commentaire expliquant l'énumération Tab :
-// - Tab est une énumération définissant quatre cas : Carte, Calendrier, Réparation et Profil.
-// - Chaque cas a une valeur de type String correspondante.
-// - La propriété calculée symbol retourne le symbole SF Symbol associé à chaque cas, utilisé pour l'affichage dans l'interface utilisateur.
 
